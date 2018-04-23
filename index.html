@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora incrível</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Varela+Round">
+</head>
+<body>
+	<div class="container calculator">
+		<div class="row text-center justify-content-center">
+			<div class="col-12">
+				<input type="number" id="elem-1">
+			</div>
+			<div class="col-12">
+				<div class="container operations">
+					<div class="row align-items-center text-center">		
+						<div class="col operation">
+							<input type="radio" id="sum-operation" value="+" name="operation" checked>
+							<label for="sum-operation">+</label>
+						</div>
+						<div class="col operation">
+							<input type="radio" id="subtract-operation" value="-" name="operation">
+							<label for="subtract-operation">-</label>
+						</div>
+						<div class="col operation">
+							<input type="radio" id="multiply-operation" value="*" name="operation">
+							<label for="multiply-operation">&times;</label>
+						</div>
+						<div class="col operation">
+							<input type="radio" id="divide-operation" value="/" name="operation">
+							<label for="divide-operation">&divide;</label>
+						</div>
+						<div class="col operation">
+							<input type="radio" id="percent-operation" value="%" name="operation">
+							<label for="percent-operation">%</label>		
+						</div>
+						<div class="col operation">
+							<input type="radio" id="power-operation" value="^" name="operation">
+							<label for="power-operation">^</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12">
+				<input type="number" id="elem-2">
+			</div>
+			<div class="col-12">
+				<button id="calculate-button">=</button>
+			</div>
+			<div class="col-12">
+				<h2 id="result"></button>
+			</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
